@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* nav bar */
+
+.nav {
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 10px;
+}
+
+.nav ul {
+    padding: 10px 10px;
+
+}
+
+.nav li {
+    color: white;
+    list-style: none;
+    font-size: 6vh;
+}
+
+/* container */
+.container {
+    margin-top: 10vh;
+    display: flex;
+    justify-content: center;
+}
+
+/* left side  */
+
+.con1 {
+    display: grid;
+    grid-template-columns: repeat(3, 10vw);
+    grid-template-rows: repeat(3, 10vw);
+    position: relative;
+}
+
+.box {
+    border: 2px solid black;
+    font-size: 8vw;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.box-text {
+    font-size: 8vw;
+}
+
+.box:hover{
+    background-color: lightgrey;
+}
+
+.br-0 {
+    border-right: 0;
+}
+
+.bl-0 {
+    border-left: 0;
+}
+
+.bt-0 {
+    border-top: 0;
+}
+
+.bb-0 {
+    border-bottom: 0;
+}
+
+/* right side  */
+
+.con2{
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    /* margin-left: 5vw; */
+}
+.con2>div{
+display:flex ;
+padding:10px 10px ;
+}
+.con2 span,form{padding:0 10px;}
+#reset{
+    padding: 9px 23px;
+    margin: 3px 13px;
+    background-color:#dc1e90;
+    color:white;
+}
+.sp .text{
+    margin-top:10px;
+}
+/* image animation */
+
+.con2 img{ 
+    width:0;
+    transition:width 1s  ease-in-out ;  
+}
+
+@media screen and (max-width:1100px){
+ .con2 h1{
+    font-size:1.8rem;
+ }
+ #reset{
+    padding: 6px 17px;
+    margin: 3px 13px;
+}
+.sp .text{
+    font-size:1rem;
+    margin-top:10px;
+}
+}
+@media screen and (max-width:915px){
+   
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .con2{
+        margin-top: 30px;
+    }
+    .con2 h1{
+       font-size:1.5rem;
+    }
+    #reset{
+       padding: 6px 17px;
+       margin: 3px 13px;
+   }
+   .sp .text{
+       font-size:1rem;
+       margin-top:10px;
+   }
+
+   .con1 {
+    display: grid;
+    grid-template-columns: repeat(3, 15vw);
+    grid-template-rows: repeat(3, 15vw);
+}
+   }
