@@ -31,7 +31,7 @@ const checkwin = () => {
     ]
     win.forEach(e => {
         if ((boxtext[e[0]].innerText === boxtext[e[1]].innerText) && (boxtext[e[2]].innerText === boxtext[e[1]].innerText ) && boxtext[e[0]].innerText !== '') {
-            document.querySelector('.text').innerText = boxtext[e[0]].innerText + "won";
+            document.querySelector('.text').innerText = boxtext[e[0]].innerText + " won";
             isgameover = true;
             // gameover.play();
             document.querySelector('.img').getElementsByTagName('img')[0].style.width = "200px" ;
@@ -73,7 +73,7 @@ reset.addEventListener('click',()=>{
      })
       turn='X';
       isgameover=false;
-      document.getElementsByClassName("text")[0].innerText="Turn for"+ turn;
+      document.getElementsByClassName("text")[0].innerText="Turn for "+ turn;
       document.getElementsByTagName('img')[0].style.width ="0px";
 })
 
