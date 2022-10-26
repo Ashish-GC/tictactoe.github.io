@@ -45,7 +45,7 @@ Array.from(boxes).forEach(element => {
     element.addEventListener('click', () => {
         if (boxtext.innerHTML === '') {
             boxtext.innerHTML = turn;
-             audioTurn.play();
+//              audioTurn.play();
             turn = changeturn();
             // win check function
             checkwin();
