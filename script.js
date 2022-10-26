@@ -1,9 +1,4 @@
 
-//  incomplete project will try to complete it after I learn javascript
-
-
-console.log("tic tac toe");
-
 // game audios
 
 let music = new Audio("files/music.mp3");
@@ -50,8 +45,8 @@ Array.from(boxes).forEach(element => {
     element.addEventListener('click', () => {
         if (boxtext.innerHTML === '') {
             boxtext.innerHTML = turn;
+             audioTurn.play();
             turn = changeturn();
-            audioTurn.play();
             // win check function
             checkwin();
             if (!isgameover) 
